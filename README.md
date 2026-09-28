@@ -19,7 +19,7 @@ An agent does something it shouldn't. Three weeks later, someone asks *"what exa
 │  journal      hash-chained · Ed25519-signed
 │  anchoring    RFC 3161 · third-party TSA
 │  exports      signed attestations · MIT
-│  interfaces   MCP server · ZCode plugin · API · dashboard
+│  interfaces   MCP server · Plugins · API · dashboard
 │  pilot        solo, from the Vosges mountains 🇫🇷
 └────────────────────────────────────────────────────────
 ```
