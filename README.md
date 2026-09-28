@@ -1,4 +1,4 @@
-<h1 align="center">⬛ Sam Labbe</h1>
+<h1 align="center">🐏 Sam LABBE</h1>
 
 <p align="center">
 I build <strong>black boxes for systems nobody can fully trust</strong> — right now, that means AI agents.
