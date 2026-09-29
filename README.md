@@ -32,17 +32,18 @@ Tamper-evidence is not truth-at-write: NoireBox proves records **weren't altered
 
 ## 🛩️ Also in the hangar
 
+- **[tinyjsapp-studio](https://github.com/slabbdev/tinyjsapp-studio)** — desktop companion for [tinyjs](https://github.com/tarwin/tinyjsapp): create tinyjs apps and wrap any website into a real ~6 MB native desktop app — no terminal, menu-bar apps included. Built with tinyjs itself, so `src/` doubles as the tutorial. [v0.1.1](https://github.com/slabbdev/tinyjsapp-studio/releases/tag/v0.1.1) is out, installers for all three platforms · [site](https://slabbdev.github.io/tinyjsapp-studio/).
 - **[zerojour](https://github.com/slabbdev/zerojour)** — security-advisories agent built for the DEV × Sanity Challenge: head-to-head model duels on structured content, scored eval runs. Every demo frame is a real capture.
 - **[pluginforge](https://github.com/slabbdev/pluginforge)** — quality-first factory for e-commerce payment plugins: one spec, one conformance suite, AI-agent generation under strict gates.
 - **[mineral-starter-kit](https://github.com/slabbdev/mineral-starter-kit)** — batteries-included starter for the [Mineral](https://github.com/mineral-dart/mineral) Dart framework.
 
 ## 🧰 Stack & scars
 
-Python · TypeScript · Dart · a long PHP past (Laravel, Symfony — I don't flinch at legacy anymore).
+Python · TypeScript · JavaScript · Dart · a long PHP past (Laravel, Symfony — I don't flinch at legacy anymore).
 
 ## 📡 Elsewhere
 
-[slabb.dev](https://slabb.dev) · [X](https://x.com/slabbbbbbbbbbbb) · [☕ buymeacoffee.com/samlabbe](https://buymeacoffee.com/samlabbe)
+[slabb.dev](https://slabb.dev) · [DEV](https://dev.to/slabb) · [X](https://x.com/slabbbbbbbbbbbb) · [☕ buymeacoffee.com/samlabbe](https://buymeacoffee.com/samlabbe)
 
 ---
 
