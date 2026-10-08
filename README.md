@@ -8,29 +8,45 @@ I build <strong>black boxes for systems nobody can fully trust</strong> — righ
 > The cover-up lives in the gap between what it did and what its logs say.
 > **I build for the second gap.**
 
-## 🧳 NoireBox — the flight data recorder for AI agents
+## 🏪 The storefront
 
-An agent does something it shouldn't. Three weeks later, someone asks *"what exactly did it do?"* — and the only witness is a log written by the suspect.
+Two products. Both do one thing. Both ship receipts.
 
-[NoireBox](https://github.com/noirebox/noirebox) fixes that: a **hash-chained, Ed25519-signed journal** of agent decisions and outputs, anchored by third-party RFC 3161 timestamping, exported as attestations anyone can verify. Tamper with the journal and verification explodes. On purpose.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/noirebox/noirebox">
+        <img src="assets/noirebox-banner.svg" width="100%" alt="NoireBox — the flight data recorder for AI agents" />
+      </a>
+      <p>An agent does something it shouldn't. Three weeks later, someone asks <em>"what exactly did it do?"</em> — and the only witness is a log written by the suspect. <a href="https://github.com/noirebox/noirebox"><b>NoireBox</b></a> is a hash-chained, Ed25519-signed journal of agent decisions, anchored by third-party RFC 3161 timestamps — one TSA seal covers a whole fleet. Exports are attestations anyone can verify: tamper with the journal and verification explodes. On purpose. MCP server, plugins, API and dashboard included.</p>
+      <p>
+        <a href="https://pypi.org/project/noirebox/"><img alt="PyPI" src="https://img.shields.io/pypi/v/noirebox?style=flat-square&color=f59e0b"></a>
+        <a href="https://github.com/noirebox/noirebox/pkgs/container/noirebox"><img alt="Docker image on GHCR" src="https://img.shields.io/badge/image-ghcr.io%2Fnoirebox%2Fnoirebox-2496ED?style=flat-square"></a>
+        <a href="https://github.com/noirebox/noirebox-verify"><img alt="Verify exports in CI" src="https://img.shields.io/badge/CI-noirebox--verify-2088FF?style=flat-square"></a>
+        <a href="https://noirebox.github.io/noirebox/"><img alt="Docs" src="https://img.shields.io/badge/docs-noirebox.github.io-8957E5?style=flat-square"></a>
+        <a href="https://github.com/noirebox/noirebox/blob/main/LICENSE"><img alt="MIT" src="https://img.shields.io/github/license/noirebox/noirebox?style=flat-square"></a>
+      </p>
+      <p><code>pip install noirebox</code> · <code>docker run -p 8768:8768 ghcr.io/noirebox/noirebox</code></p>
+      <p><sub><strong>The honesty bit:</strong> tamper-evidence is not truth-at-write. NoireBox proves records <em>weren't altered</em> — it can't vouch that a record was accurate when sealed. That boundary is written down in the <a href="https://github.com/noirebox/noirebox/blob/main/docs/THREAT-MODEL.md">threat model</a>, on purpose.</sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/slabbdev/navette">
+        <img src="assets/navette-banner.png" width="100%" alt="Navette — the browser for agents" />
+      </a>
+      <p>Your agent needs a browser. Playwright ships <b>218 MB</b> of Chromium; <a href="https://github.com/slabbdev/navette"><b>Navette</b></a> is <b>one 626 KB Rust binary</b> driving the WebView your OS already ships — no Chromium, no download, no RAM bonfire. 18 MCP tools: navigate, read, click, type, screenshot — with native input on all three engines and session isolation CI-enforced.</p>
+      <p>
+        <a href="https://github.com/slabbdev/navette/releases"><img alt="Release" src="https://img.shields.io/github/v/tag/slabbdev/navette?style=flat-square&color=58a6ff&label=release"></a>
+        <a href="https://crates.io/crates/navette-browser"><img alt="crates.io" src="https://img.shields.io/crates/v/navette-browser?style=flat-square&color=dea584"></a>
+        <a href="https://github.com/slabbdev/navette/blob/main/LICENSE"><img alt="MIT" src="https://img.shields.io/github/license/slabbdev/navette?style=flat-square"></a>
+        <a href="https://slabbdev.github.io/navette/"><img alt="Site" src="https://img.shields.io/badge/site-slabbdev.github.io%2Fnavette-8957E5?style=flat-square"></a>
+      </p>
+      <p><code>brew install slabbdev/tap/navette</code> · <code>cargo install navette-browser</code> · <code>docker run -i --rm ghcr.io/slabbdev/navette navette mcp</code></p>
+      <p><sub><strong>Measured, not vibed:</strong> <a href="https://github.com/slabbdev/navette/blob/main/BENCHMARKS.md">BENCHMARKS.md</a> — faster than Playwright + Chromium on every metric measured, reproducible with one command. The walled-web Tollbooth bench (200 URLs × 5 categories) ships in <a href="https://github.com/slabbdev/navette/tree/main/bench">bench/</a>, dataset CC BY 4.0.</sub></p>
+    </td>
+  </tr>
+</table>
 
-```text
-┌─ ⬛ FLIGHT DATA RECORDER — STATUS ────────────────────
-│  journal      hash-chained · Ed25519-signed
-│  anchoring    RFC 3161 · third-party TSA
-│  exports      signed attestations · MIT
-│  interfaces   MCP server · Plugins · API · dashboard
-│  pilot        solo, from the Vosges mountains 🇫🇷
-└────────────────────────────────────────────────────────
-```
-
-[PyPI](https://pypi.org/project/noirebox/) · [Docker](https://github.com/noirebox/noirebox/pkgs/container/noirebox) · [Verify in CI](https://github.com/noirebox/noirebox-verify) · [Docs](https://noirebox.github.io/noirebox/)
-
-### The honesty bit
-
-Tamper-evidence is not truth-at-write: NoireBox proves records **weren't altered** — it can't vouch that a record was accurate when it was sealed. That boundary is written down in the [threat model](https://github.com/noirebox/noirebox/blob/main/docs/THREAT-MODEL.md), on purpose. Trust a product that tells you what it *can't* do.
-
-## 🛩️ Also in the hangar
+## 🧳 Also in the hangar
 
 - **[tinyjsapp-studio](https://github.com/slabbdev/tinyjsapp-studio)** — desktop companion for [tinyjs](https://github.com/tarwin/tinyjsapp): create tinyjs apps and wrap any website into a real ~6 MB native desktop app — no terminal, menu-bar apps included. Built with tinyjs itself, so `src/` doubles as the tutorial. [v0.1.1](https://github.com/slabbdev/tinyjsapp-studio/releases/tag/v0.1.1) is out, installers for all three platforms · [site](https://slabbdev.github.io/tinyjsapp-studio/).
 - **[zerojour](https://github.com/slabbdev/zerojour)** — security-advisories agent built for the DEV × Sanity Challenge: head-to-head model duels on structured content, scored eval runs. Every demo frame is a real capture.
@@ -39,7 +55,7 @@ Tamper-evidence is not truth-at-write: NoireBox proves records **weren't altered
 
 ## 🧰 Stack & scars
 
-Python · TypeScript · JavaScript · Dart · a long PHP past (Laravel, Symfony — I don't flinch at legacy anymore).
+Python · Rust · TypeScript · JavaScript · Dart · a long PHP past (Laravel, Symfony — I don't flinch at legacy anymore). Solo, from the Vosges mountains 🇫🇷.
 
 ## 📡 Elsewhere
 
