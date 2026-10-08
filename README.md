@@ -16,7 +16,7 @@ Two products. Both do one thing. Both ship receipts.
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/noirebox/noirebox">
-        <img src="assets/noirebox-banner.svg" width="100%" alt="NoireBox — the flight data recorder for AI agents" />
+        <img src="assets/noirebox-banner.png" width="100%" alt="NoireBox — proof, not promises: tamper-evident AI agent audit trails" />
       </a>
       <p>An agent does something it shouldn't. Three weeks later, someone asks <em>"what exactly did it do?"</em> — and the only witness is a log written by the suspect. <a href="https://github.com/noirebox/noirebox"><b>NoireBox</b></a> is a hash-chained, Ed25519-signed journal of agent decisions, anchored by third-party RFC 3161 timestamps — one TSA seal covers a whole fleet. Exports are attestations anyone can verify: tamper with the journal and verification explodes. On purpose. MCP server, plugins, API and dashboard included.</p>
       <p>
